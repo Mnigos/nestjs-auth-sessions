@@ -4,6 +4,7 @@
 ![dependencies](https://david-dm.org/Mnigos/nestjs-auth-sessions.svg)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![Coffee](https://badgen.net/badge/Buy%20Me/A%20Coffee/purple?icon=kofi)](https://www.buymeacoffee.com/mnigos)
 
 # Nestjs Auth Sessions
 
