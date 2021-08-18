@@ -5,6 +5,7 @@ import { UsersModule } from '../users/users.module'
 
 import { AuthService } from './auth.service'
 import { AuthController } from './auth.controller'
+import { LocalStrategy } from './local.strategy'
 
 @Module({
   imports: [
@@ -13,7 +14,7 @@ import { AuthController } from './auth.controller'
       sessions: true,
     }),
   ],
-  providers: [AuthService],
+  providers: [AuthService, LocalStrategy],
   controllers: [AuthController],
 })
 export class AuthModule {}
