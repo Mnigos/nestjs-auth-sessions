@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@commitlint/cli': 13.1.0
   '@commitlint/config-conventional': 13.1.0
+  '@golevelup/nestjs-testing': ^0.1.2
   '@nestjs/cli': ^8.0.0
   '@nestjs/common': ^8.0.0
   '@nestjs/config': ^1.0.1
@@ -69,6 +70,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 13.1.0
   '@commitlint/config-conventional': 13.1.0
+  '@golevelup/nestjs-testing': 0.1.2
   '@nestjs/cli': 8.1.1
   '@nestjs/mongoose': 8.0.1_3e8d2071621c2cb5c4f7044c58d14b47
   '@nestjs/schematics': 8.0.2_typescript@4.3.5
@@ -666,6 +668,10 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@golevelup/nestjs-testing/0.1.2:
+    resolution: {integrity: sha512-7TOpI6E86GBE93DJoCqavOfycAMPjnZDfcpdBrm/aWUoR/oDxHjhTr1R8NGVY4+iHY5wDwEXG7mcDkDEWQznfQ==}
     dev: true
 
   /@humanwhocodes/config-array/0.5.0:
