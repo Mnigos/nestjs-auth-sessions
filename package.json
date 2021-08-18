@@ -1,7 +1,7 @@
 {
   "name": "nestjs-auth-sessions",
   "version": "0.0.1",
-  "description": "",
+  "description": "Simple example to Nestjs authentication with sessions",
   "author": "Mnigos",
   "private": false,
   "license": "MIT License",
