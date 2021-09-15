@@ -15,7 +15,7 @@ export class AuthService {
 
     const foundedUser = await this.usersService.getOneByName(name)
     const hashedPass = compare(pass, foundedUser.pass)
-    if (!foundedUser || !hashedPass) throw new UnauthorizedException()
+    if (!hashedPass) throw new UnauthorizedException()
 
     return {
       name,
