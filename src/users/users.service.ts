@@ -66,7 +66,7 @@ export class UsersService {
     return true
   }
 
-  async update(user: User): Promise<User> {
+  async update(user: User): Promise<boolean> {
     const { _id } = user
 
     const updatedUser = await this.userModel.findOne({ _id })
@@ -75,7 +75,7 @@ export class UsersService {
 
     await this.userModel.updateOne({ _id }, user)
 
-    return updatedUser as User
+    return true
   }
 
   async delete(_id: string): Promise<boolean> {
