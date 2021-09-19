@@ -21,8 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint",
-    "*.{css,vue}": "stylelint"
+    "*.{js,ts}": "eslint"
   },
   "husky": {
     "hooks": {
