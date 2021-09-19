@@ -14,8 +14,12 @@ export class AuthService {
     password: string
   ): Promise<UserToReturn> {
     const foundedUser = await this.usersService.getOneByName(username)
+
+    if (!foundedUser) throw new UnauthorizedException()
+
     const { pass, ...rest } = foundedUser
-    const hashedPass = compare(password, pass)
+    const hashedPass = await compare(password, pass)
+
     if (!hashedPass) throw new UnauthorizedException()
 
     return {
